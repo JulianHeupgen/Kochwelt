@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept des Tages</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body onload="showRecipe(amountsChili, ingredientsChili)">
+
+    <header>
+        <div class="logo-container">
+            <a class="header-img-link" href="./index.html"><img class="header-img" src="./img/logo.png"></a>
+        </div>
+        <div class="nav-container">
+            <nav>
+                <a class="nav-links" href="./index.html">Start</a>
+                <a class="nav-links underline" href="./rezept1.html">Rezept des Tages</a>
+                <a class="nav-links" href="./kontakt.html">Kontakt</a>
+                <a class="nav-links" href="./impressum.html">Impressum</a>
+            </nav>
+        </div>
+
+        <div class="navbar-mobile">
+            <div class="navbar-mobile-img">
+                <img src="./img/nav_button.png">
+            </div>
+            <div class="navbar-mobile-links">
+                <a href="./index.html">Start</a>
+                <a href="./rezept1.html">Rezept des Tages</a>
+                <a href="./kontakt.html">Kontakt</a>
+                <a href="./impressum.html">Impressum</a>
+            </div>
+        </div>
+    </header>
+    
+    <section class="rezept">
+        <h1>Chili Con Carne</h1>
+        <img src="./img/chiliconcarne.jpg">
+        <div class="infos">
+            <div class="info">
+                <img src="./img/clock.svg">
+                <span>30 Min</span>
+            </div>
+            <div class="info">
+                <img src="./img/brain.svg">
+                <span>simpel</span>
+            </div>
+            <div class="info">
+                <img src="./img/calendar.svg">
+                <span>01.10.2023</span>
+            </div>
+        </div>
+        <div class="trennlinie"></div>
+        <div class="calculation">
+            <div class="input-area">
+            <label for="input">Zutaten für</label>
+            <div class="input-area-inner">
+            <input id="input" value="2" type="number" min="1" max="12">
+            <button id="recipe-button" onclick="showRecipe(amountsChili, ingredientsChili)">Personen</button>
+            </div>
+            </div>
+            <br>
+            <div id="zutaten">
+
+            </div>
+        </div>
+        <div class="zubereitung">
+        <h2>Zubereitung</h2> 
+            <div class="infos">
+                <div class="info">
+                    <img src="./img/clock.svg">
+                    <span> ca 30 Minuten</span>
+                </div>
+                <div class="info">
+                    <img src="./img/clock.svg">
+                    <span>Gesamtzeit ca 1 Stunde 15 Minuten</span>
+                </div>
+            </div>
+        <span class="vorgang">
+            Die Zwiebeln abziehen, in Würfel schneiden und in einem tiefen Topf oder Bräter im Öl goldgelb anbraten. Hackfleisch zufügen, gut anbraten und Farbe nehmen lassen. Dabei ab und zu umrühren und das Hackfleisch zerkleinern. 
+            Paprika putzen, in Würfel schneiden und zum Hackfleisch geben. Tomatenmark zufügen und etwas anrösten. Die Tomaten, den gepellten und zerkleinerten Knoblauch sowie Gewürze (Zucker, Salz, Pfeffer, Paprika, Tabasco, Chili oder Cayenne) zugeben. Allerdings lieber erst einmal etwas vorsichtiger würzen und gegebenenfalls nach der Kochzeit nachwürzen. Mit Brühe auffüllen und bei mittlerer Hitze 30 - 45 Minuten einkochen lassen, ist die Flüssigkeit verkocht, immer wieder Brühe angießen. 
+            Kurz vor Ende der Garzeit Bohnen und Mais aus der Dose befreien, gründlich abspülen und zufügen. Diese nur kurz wenige Minuten mitgaren. Anschließend alles noch einmal abschmecken und gegebenenfalls nachwürzen. Am besten schmeckt ein Chili gut durchgezogen, ist also wunderbar am Tag vorher vorzubereiten!<br><br>
+            Anrichten:<br><br>
+            Chili con Carne in einem tiefen Teller oder einer Schüssel servieren. Dazu passt ein knuspriges Baguette, Tortillas oder Nachos.<br> 
+            Tipps: Wahlweise kann das Chili auch mit klein geschnittenem Fleisch und frischen Chilischoten zubereitet werden. 
+            Wer seinem "normalen" Chili einmal eine etwas andere Geschmacksrichtung geben möchte, verfeinert das obige Rezept mit einem Teelöffel Kreuzkümmel, einem Esslöffel dunklem Kakaopulver und einem doppelten Espresso!<br><br> Guten Appetit! &#128523
+        </span>
+        </div>
+        <div class="autor">
+            <h3>Rezept erstellt von</h3>
+            <div class="persoenliches">
+                <div class="meinFoto"></div>
+                <span>Julian</span>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <img class="footer-logo" src="./img/logo.png">
+        <div class="social-media">
+            <img src="./img/facebook.png">
+            <img src="./img/insta.png">
+        </div>
+    </footer>
+    
+</body>
+</html>

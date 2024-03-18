@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaghetti Pesto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body onload="showRecipe(amountsPesto, ingredientsPesto)">
+
+    <header>
+        <div class="logo-container">
+            <a class="header-img-link" href="./index.html"><img class="header-img" src="./img/logo.png"></a>
+        </div>
+        <div class="nav-container">
+            <nav>
+                <a class="nav-links" href="./index.html">Start</a>
+                <a class="nav-links" href="./rezept1.html">Rezept des Tages</a>
+                <a class="nav-links" href="./kontakt.html">Kontakt</a>
+                <a class="nav-links" href="./impressum.html">Impressum</a>
+            </nav>
+        </div>
+
+        <div class="navbar-mobile">
+            <div class="navbar-mobile-img">
+                <img src="./img/nav_button.png">
+            </div>
+            <div class="navbar-mobile-links">
+                <a href="./index.html">Start</a>
+                <a href="./rezept1.html">Rezept des Tages</a>
+                <a href="./kontakt.html">Kontakt</a>
+                <a href="./impressum.html">Impressum</a>
+            </div>
+        </div>
+    </header>
+    
+    <section class="rezept">
+        <h1>Spaghetti Pesto</h1>
+        <img src="./img/pesto.jpg">
+        <div class="infos">
+            <div class="info">
+                <img src="./img/clock.svg">
+                <span>20 Min</span>
+            </div>
+            <div class="info">
+                <img src="./img/brain.svg">
+                <span>simpel</span>
+            </div>
+            <div class="info">
+                <img src="./img/calendar.svg">
+                <span>02.10.2023</span>
+            </div>
+        </div>
+        <div class="trennlinie"></div>
+        <div class="calculation">
+            <div class="input-area">
+            <label for="input">Zutaten für</label>
+            <div class="input-area-inner">
+            <input id="input" value="2" type="number" min="1" max="12">
+            <button id="recipe-button" onclick="showRecipe(amountsPesto, ingredientsPesto)">Personen</button>
+            </div>
+            </div>
+            <br>
+            <div id="zutaten">
+
+            </div>
+        </div>
+        <div class="zubereitung">
+        <h2>Zubereitung</h2> 
+            <div class="infos">
+                <div class="info">
+                    <img src="./img/clock.svg">
+                    <span> ca 20 Minuten</span>
+                </div>
+                <div class="info">
+                    <img src="./img/clock.svg">
+                    <span>Gesamtzeit 20 Minuten</span>
+                </div>
+            </div>
+        <span class="vorgang">
+            Spaghetti al dente garen. Alle übrigen Zutaten in den Mixer geben und verrühren. Ich gebe die Pinien- bzw. Sonnenblumenkerne mit dem Knoblauch zunächst in einen elektrischen Zerkleinerer und vermische dann alles mit dem Pürierstab. Keinen Schreck wegen der Salzmenge, Ängstliche können aber auch weniger nehmen und am Tisch nachsalzen. 
+            Die Spaghetti abtropfen lassen. In den noch warmen Nudeltopf die Hälfte des Pestos geben. Nudeln drauf, Rest des Pestos darüber und alles gut und rasch vermischen. Sofort servieren.<br><br> Guten Appetit! &#128522
+        </span>
+        </div>
+        <div class="autor">
+            <h3>Rezept erstellt von</h3>
+            <div class="persoenliches">
+                <div class="meinFoto"></div>
+                <span>Julian</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img class="footer-logo" src="./img/logo.png">
+        <div class="social-media">
+            <img src="./img/facebook.png">
+            <img src="./img/insta.png">
+        </div>
+    </footer>
+    
+</body>
+</html>

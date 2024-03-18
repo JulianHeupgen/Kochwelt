@@ -1,0 +1,915 @@
+
+body{
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 3px #e7e8e9;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-img-link {
+    padding-left: 120px;
+    padding-top: 30px;
+}
+
+.header-img {
+    height: 110px;
+    width: auto;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 120px;
+    padding-bottom: 9px;
+}
+
+.nav-links {
+    font-size: 23px;
+    font-weight: 500;
+    text-decoration: none;
+    color:rgb(44, 43, 43);
+    padding-right: 30px;
+}
+
+.underline {
+    text-decoration: underline; 
+}
+
+.nav-links:hover {
+    color: #008000;
+}
+
+
+
+.navbar-mobile {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 120px;
+}
+
+.navbar-mobile-img img {
+    height: 39px;
+    width: auto;
+}
+
+.navbar-mobile-img img:hover {
+    cursor: pointer;
+}
+
+.navbar-mobile-links {
+    position: absolute;
+    background-color: #f3f4f5;
+    width: 190px;
+    z-index: 1;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out 0s;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+}
+
+.navbar-mobile:hover .navbar-mobile-links {
+    visibility: visible;
+    opacity: 1;
+}    
+  
+.navbar-mobile-links a {
+    color:rgb(66, 65, 65);
+    font-size: 20px;
+    padding: 7px;
+    text-decoration: none;
+}
+
+.navbar-mobile-links a:hover {
+    cursor: pointer;
+    color: #008000;
+    font-weight: 600;
+}
+
+
+
+
+
+.rezept-des-tages {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+#chiliconcarne-img {
+    height: 40vh;
+    width: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#chiliconcarne-img:hover {
+    transform: scale(1.07);
+}
+
+.tagesrezept-description {
+    padding-left: 50px;
+}
+
+.tagesrezept-description h2 {
+    margin-block-start: 0;
+    font-size: 36px;
+}
+
+.description {
+    font-size: 24px;
+    padding-bottom: 160px;
+}
+
+.button-tagesrezept {
+    color:#e7e8e9;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #008000;
+    padding: 16px 78px;
+    border-radius: 12px;
+}
+
+.button-tagesrezept:hover {
+    cursor: pointer;
+    background-color: rgb(74, 165, 74);
+}
+
+
+
+
+
+
+.neues {
+    background-color: rgb(245, 243, 243);
+    margin-top: 70px;
+}
+
+.neues h2 {
+    text-align: center;
+    font-size: 36px;
+    padding: 36px;
+}
+
+.gerichte {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gericht {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.gericht-img {
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gericht-img:hover {
+    transform: scale(1.07);
+}
+
+.gericht span {
+    font-size: 24px;
+    padding: 20px;
+}
+
+
+
+
+
+.ratschlag h2 {
+    text-align: center;
+    font-size: 36px;
+    padding: 36px;
+}
+
+.text-with-img {
+    display: flex;
+    justify-content: center;
+    padding: 10px 80px;
+    margin-bottom: 70px;
+}
+
+.text-with-img span {
+    font-size: 24px;
+    padding-right: 60px;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.grill-img {
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+
+
+footer {
+    background-color:rgb(44, 43, 43);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 150px;
+}
+
+.footer-logo {
+    height: 90px;
+    width: auto;
+    filter: invert(1);
+}
+
+.social-media img {
+    height: 60px;
+    width: auto;
+    margin-right: 15px;
+}
+
+.social-media img:hover {
+    cursor: pointer;
+    filter:drop-shadow(0px 0px 10px #FFFFFF);
+}
+
+
+
+
+.rezept {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 360px;
+}
+
+.rezept h1 {
+    margin-block-start: 0;
+    font-size: 40px;
+}
+
+.rezept img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.infos {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    font-size: 18px;
+}
+
+.info {
+    margin-right: 18px;
+    background-color:rgb(233, 228, 228);
+    padding: 8px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.info img {
+    height: 18px;
+    width: auto;
+    margin-right: 7px;
+}
+
+
+.trennlinie {
+    height: 1px;
+    background-color: rgb(199, 197, 197);
+}
+
+.calculation {
+    padding-top: 22px;
+}
+
+.input-area {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 22px;
+}
+
+.input-area label {
+    margin-right: 12px;
+}
+
+.input-area-inner {
+    display: flex;
+}
+
+#input {
+    height: 28px;
+    font-size: 21px;
+    border-width: 1px;
+    border-right: none;
+}
+
+#recipe-button {
+    height: 32px;
+    font-size: 19px;
+    padding: 7px 32px;
+    display: flex;
+    align-items: center;
+    background-color: #008000;
+    color: #e7e8e9;
+    border-width: 0px;
+}
+
+#recipe-button:hover {
+    cursor: pointer;
+    background-color: rgb(82, 175, 82);
+}
+
+.container-gerade {
+    background-color: rgb(233, 228, 228);
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 13px;
+}
+
+.container-ungerade {
+    background-color: rgb(250, 247, 247);
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 13px;
+}
+
+
+
+
+
+.zubereitung {
+    padding-top: 30px;
+}
+
+.vorgang {
+    font-size: 21px;
+}
+
+
+
+
+.autor {
+    padding-top: 40px;
+}
+
+.persoenliches {
+    display: flex;
+    align-items: center;
+}
+
+.meinFoto {
+    background-image: url(./img/julian.jpg);
+    height: 190px;
+    width: 190px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.persoenliches span {
+    font-size: 24px;
+    padding-left: 30px;
+}
+
+
+
+
+
+
+.kontaktformular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.kontaktformular h1 {
+    margin-block-start: 0;
+    font-size: 30px;
+}
+
+.kontaktformular form {
+    display: flex;
+    flex-direction: column;
+}
+
+#formular input {
+    height: 30px;
+    width: 440px;
+    border-radius: 4px;
+    border-width: 1px;
+    font-size: 18px;
+}
+
+#formular textarea {
+    margin-top: 15px;
+    height: 300px;
+    width: 440px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+#formular button {
+    margin-top: 15px;
+    color:#e7e8e9;
+    background-color: #008000;
+    padding: 8px;
+    font-size: 22px;
+    border-radius: 4px;
+    border-width: 0;
+}
+
+#formular button:hover {
+    cursor: pointer;
+    background-color: rgb(73, 160, 73);
+}
+
+
+
+
+
+.impressum {
+    padding: 70px 120px;
+}
+
+
+.impressum h1 {
+    font-size: 30px;
+}
+
+
+
+
+
+
+@media(max-width: 1550px) {
+
+    .rezept {
+        padding: 70px 180px; 
+    }
+
+}
+
+
+@media(max-width: 1500px) {
+
+    .gericht-img {
+        height: 200px;
+    }
+
+    .ratschlag h2 {
+        font-size: 30px;
+    }
+    
+    .text-with-img span {
+        font-size: 21px;  
+    }
+
+    .grill-img {
+        height: 200px;
+    }
+
+}
+
+
+@media(max-width: 1300px) {
+
+    .rezept {
+        padding: 70px 140px;
+    }
+}
+
+
+@media(max-width: 1250px) {
+
+    .nav-container nav {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: inline-block;
+    }
+
+    .rezept-des-tages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #chiliconcarne-img {
+        height: 35vh;
+    }
+
+    .tagesrezept-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tagesrezept-description h2 {
+        padding-top: 20px;
+    }
+
+    .description {
+        font-size: 24px;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+    .button-tagesrezept {
+        padding: 8px 46px;
+        width: 200px;
+        text-align: center;
+        
+    }
+
+    .ratschlag h2 {
+        font-size: 22px;
+    }
+    
+    .text-with-img span {
+        font-size: 18px;  
+    }
+
+}
+
+
+@media(max-width: 1050px) {
+
+    .gerichte {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gericht-img {
+        height: 250px;
+        width: 450px;
+    }
+
+    .neues h2 {
+        font-size: 26px;
+    }
+
+    .text-with-img {
+        flex-direction: column;
+        padding: 10px 50px;
+    }
+
+    .text-with-img span {
+        font-size: 21px;
+        padding-top: 0px;
+        padding-bottom: 25px;
+    }
+
+    .grill-img {
+        height: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+ 
+}
+
+@media(max-width: 1000px) {
+
+    .rezept {
+        padding: 70px 100px;  
+    }
+}
+
+
+@media(max-width: 850px) {
+
+    .header-img-link {
+        padding-left: 60px;
+    }
+
+    .header-img {
+        height: 70px;
+    }
+
+    .navbar-mobile {
+        top: 52px;
+    }
+
+    .navbar-mobile-img img {
+        height: 28px;
+    }
+
+    .navbar-mobile {
+        right: 60px;
+    }
+
+    footer {
+        padding: 30px 100px;
+    }
+    
+    .footer-logo {
+        height: 70px;
+        width: auto;
+    }
+    
+    .social-media img {
+        height: 50px;
+        width: auto;
+        margin-right: 13px;
+    }
+    
+    .kontaktformular {
+        padding-bottom: 150px;
+    }
+}
+
+
+@media(max-width: 700px) {
+
+    .rezept-des-tages {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    #chiliconcarne-img {
+        height: 25vh;
+    }
+
+    .tagesrezept-description {
+        padding-left: 20px;
+    }
+
+    .tagesrezept-description h2 {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+
+    .button-tagesrezept {
+        font-size: 20px;
+        width: 170px;
+        padding: 5px 32px;
+    }
+
+    .ratschlag h2 {
+        font-size: 20px;
+    }
+
+    .text-with-img {
+        padding: 8px 15px;
+    }
+
+    .text-with-img span {
+        font-size: 18px;
+        padding-top: 0px;
+        padding-bottom: 25px;
+    }
+
+    .grill-img {
+        height: 80px;
+    }
+
+    footer {
+        padding: 20px 70px;
+    }
+    
+    .footer-logo {
+        height: 55px;
+        width: auto;
+    }
+    
+    .social-media img {
+        height: 40px;
+        width: auto;
+        margin-right: 8px;
+    }
+
+    .rezept {
+        padding: 70px 90px;
+    }
+
+    .rezept h1 {
+        font-size: 32px;
+    }
+
+    .vorgang {
+        font-size: 20px;
+    }
+
+    #formular textarea {
+        height: 500px;
+    }
+
+    .impressum {
+        padding: 70px 50px;
+    }
+
+    .impressum h2 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 580px) {
+
+    .infos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        width: 160px;
+        margin-top: 10px;
+    }
+
+    .rezept h1 {
+        text-align: center;
+    }
+
+    .zubereitung h2 {
+        text-align: center;
+    }
+
+}
+
+
+@media(max-width: 550px) {
+
+    .header-img-link {
+        padding-left: 30px;
+    }
+
+    .header-img {
+        height: 40px;
+    }
+
+    .navbar-mobile {
+        top: 42px;
+    }
+
+    .navbar-mobile-img img {
+        height: 20px;
+    }
+
+    .navbar-mobile-links {
+        width: 120px;
+    }
+
+    .navbar-mobile-links a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .navbar-mobile {
+        right: 40px;
+    }
+
+    .rezept-des-tages {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #chiliconcarne-img {
+        height: 18vh;
+    }
+
+    .tagesrezept-description h2 {
+        font-size: 21px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    .button-tagesrezept {
+        font-size: 18px;
+        width: 160px;
+    }
+
+    .neues h2 {
+        font-size: 22px;
+    }
+
+    .gericht-img {
+        height: 150px;
+        width: 250px;
+    }
+
+    .gericht span {
+        font-size: 18px;
+    }
+
+    .ratschlag h2 {
+        font-size: 17px;
+        padding: 50px;
+    }
+
+    .text-with-img span {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 15px 30px;
+    }
+    
+    .footer-logo {
+        height: 40px;
+        width: auto;
+    }
+    
+    .social-media img {
+        height: 30px;
+        width: auto;
+        margin-right: 4px;
+    }
+
+    .rezept {
+        padding: 70px 50px;
+    }
+
+    .rezept h1 {
+        font-size: 28px;
+    }
+
+    .vorgang {
+        font-size: 18px;
+    }
+
+    #formular input {
+        width: 300px;
+    }
+    
+    #formular textarea {
+        width: 300px;
+    }
+    
+    .impressum {
+            padding: 70px 20px;
+            word-wrap: break-word;
+        }
+    
+    .impressum h2 {
+        font-size: 17px;
+    }
+    
+}
+
+
+@media(max-width: 500px) {
+
+    .rezept {
+        padding: 70px 30px;
+    }
+        
+    .input-area {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-area-inner {
+        margin-top: 10px;
+    }
+
+    .vorgang {
+        font-size: 16px;
+    }
+
+}
+
+
+@media(max-width: 430px) {
+
+    #formular input {
+        width: 240px;
+    }
+    
+    #formular textarea {
+        width: 240px;
+    }
+
+}
+
+
+
